@@ -4,6 +4,15 @@ Python and AI learning path for transcription, Bedrock, notebooks, agent workflo
 
 Last verified: 2026-06-20
 
+## Runnable Starter Project
+
+Run the deterministic local agent/eval example before connecting external model APIs:
+
+```bash
+python3 projects/local-agent-eval/app.py
+python3 projects/local-agent-eval/test_app.py
+```
+
 ## Baseline
 
 - Python 3.14 stable/bugfix
