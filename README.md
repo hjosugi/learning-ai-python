@@ -2,7 +2,15 @@
 
 Python and AI learning path for transcription, Bedrock, notebooks, agent workflows, retrieval, and evals.
 
-Last verified: 2026-06-20
+Last verified: 2026-06-21
+
+## Development Environment
+
+If Python tooling is missing locally, enter the Nix shell:
+
+```bash
+nix develop
+```
 
 ## Runnable Starter Project
 
@@ -11,6 +19,25 @@ Run the deterministic local agent/eval example before connecting external model 
 ```bash
 python3 projects/local-agent-eval/app.py
 python3 projects/local-agent-eval/test_app.py
+```
+
+## Target Hands-On Projects
+
+MCP/tool-calling shape without external credentials:
+
+```bash
+python3 projects/mcp-stdio-tool-server/server.py --demo
+python3 projects/mcp-stdio-tool-server/test_server.py
+```
+
+Use this before replacing the deterministic tool call with an actual model or MCP SDK.
+
+LLM internals from scratch (BPE tokenizer, n-gram LM, toy RAG, LLM-as-judge),
+pure stdlib, no network (see [lessons/llm-internals](lessons/llm-internals/README.md)):
+
+```bash
+python3 lessons/llm-internals/demo.py
+python3 lessons/llm-internals/test_llm_internals.py
 ```
 
 ## Baseline

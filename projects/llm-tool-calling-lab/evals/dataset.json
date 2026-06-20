@@ -1,0 +1,26 @@
+[
+  {
+    "name": "weather_tokyo",
+    "input": "What is the weather in Tokyo?",
+    "expect_tools": ["get_weather"],
+    "expect_answer_contains": "18C"
+  },
+  {
+    "name": "weather_london",
+    "input": "What is the weather in London?",
+    "expect_tools": ["get_weather"],
+    "expect_answer_contains": "rainy"
+  },
+  {
+    "name": "add_two_numbers",
+    "input": "What is 21 + 21?",
+    "expect_tools": ["add"],
+    "expect_answer_contains": "42"
+  },
+  {
+    "name": "no_tool_needed",
+    "input": "Say hello.",
+    "expect_tools": [],
+    "expect_answer_contains": ""
+  }
+]
